@@ -10,33 +10,36 @@
       </ul>
     </div>
   <% end %>
+  
 
-  <div class="field">
+  <div class="field form-group ">
     <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+    <%= form.text_field :first_name, class: 'form-control', placeholder:"first_name" %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+    <%= form.text_field :last_name, class: 'form-control', placeholder:"last_name"  %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :phonenumber %>
-    <%= form.text_field :phonenumber %>
+    <%= form.text_field :phonenumber, class: 'form-control', placeholder:"phonenumber"  %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :email %>
-    <%= form.text_field :email %>
+    <%= form.text_field :email, class: 'form-control' , placeholder:"email"  %>
   </div>
 
-  <div class="field">
+  <div class="field form-group">
     <%= form.label :company_name %>
-    <%= form.text_field :company_name %>
+    <%= form.text_field :company_name, class: 'form-control', placeholder:"company_name"  %>
   </div>
+  <br/>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-dark' %>
   </div>
 <% end %>
+
